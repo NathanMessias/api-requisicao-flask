@@ -1,0 +1,8 @@
+quantidade = 1; ids = 3;
+{
+id: 1
+nome: Livro 1
+autor: Nathan
+ano: 2011
+editora: Bandeirantes
+},
