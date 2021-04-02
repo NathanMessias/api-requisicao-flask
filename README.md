@@ -18,6 +18,34 @@ Chega de papo, mais abaixo você terá o detalhamento dos endpoints criado, o qu
 
 PS: Ah! Só pra constar. API é uma das coisas que mais gosto de fazer também 🥰
 
+## Configuração e Execução
+É essencial que você tenha o python instalado na sua máquina. A versão dele tem q ser igual ou superior a versão 3. 
+
+Confirme se o seu python ja está com o pacote
+PIP instalado (Digita pip dentro do interpretador e executa, se não der erro de import, ta sussa), de preferência a versão 3 também, com ele que iremos baixar as dependências.
+
+Aconselho a usar uma máquina virtual também, porque as instalações ficarão apenas nesse projeto (isso ai tu vê um tutorial na internet).
+
+Depois disso, vá para o diretório do projeto dentro do interpretador python e execute o seguinte comando:
+
+>pip install -r requirements.txt
+
+Isso fará com que ele instale o Flask e as dependências dele. É pouca coisa, mas necessário
+
+Depois que tiver terminado de instalar, e hora de rodar o projeto. Execute o seguinte comando no mesmo lugar:
+
+>python3 app.py
+
+Tem que ser python3 mesmo, porque se não vai da erro logo no início!
+
+Assim que executar, você ja pode ir para o navegador e digitar:
+
+> localhost:5000
+
+E nisso já verás um 'Hello World' indicando que o projeto ta on. Para utilizar os endpoints apresentados mais em baixo, basta colocar o exemplo de cada endpoint
+na frente dessa url do navagador que será sucesso!
+
+Bons Estudos! 😉
 
 ## Funcionamento e Endpoints
 ### Cadastro
@@ -44,7 +72,46 @@ Para retornar uma lista com todos os dados cadastrados no arquivo, utilize o seg
 
 > /lista
 
-Ele retornara um vetor json com todos os registro encontrados no arquivo. Exemplo de retorn
+Ele retornara um vetor json com todos os registro encontrados no arquivo. Exemplo de retorno:
 
-"
-"json
+```json
+[
+    {
+        "ano": "2011",
+        "autor": "Nathan",
+        "editora": "Bandeirantes",
+        "id": "1",
+        "nome_li": "Livro1"
+    }
+]
+```
+### Consultar
+A consulta está sendo feita com base no nome do livro. Para utilizar, bastante inserir o **nome** desejado no endpoint com o método GET:
+
+>/consultar/**_nome_**
+
+Caso haja o registro com o nome indicado, será retornado um todos os dados sobre ele, do contrário, será retornado um vetor em branco.
+
+### Alterar
+A alteração pode ser feita apenas em um único campo, dois campos ou até mesmo em todos existentes. Para alteração, envie um formulário de dados com os campos preenchidos que se deseja alterar, com o método PUT para o seguinte endpoint com o **id** do registro que se quer alterar:
+
+>/alterar/**_id_**
+
+Ah! Não se esqueça dos names nos campos viu? Se não, o resultado não dará certo.
+
+name       | descrição
+-----------|-----------
+nome       | Nome do livro que será alterado
+autor      | Nome do autor do livro
+ano        | Ano do livro
+editora    | Editora do livro alterado
+
+Será retornado um json booleano True indicando que deu tudo certo.
+
+### Excluir
+Para excluir, basta passar o **id** do registro que se quer deletar para o seguinte endpoint com o método DELETE:
+
+>/excluir/**id**
+
+Será retornado um booleano json **True** indicando que deu tudo certo.
+
