@@ -7,10 +7,10 @@ configurações e downloads (o que tornava isso complicado para um iniciante), o
 Esse projeto não utilizada banco de dados (menos coisas para se preocupar \o/). Você terá que baixar apenas as dependências, e aconselho a configurar um ambiente virtual
 do seu gosto para não prejudicar outras configurações que já possa ter em sua máquina. A forma que é salvo os registros é por meio de um arquivo .txt. Ele é criado, caso
 ainda não tenha, na primeira requisição que fizer após iniciar o servidor e, caso já tenha, ele irá apenas atualizar as referências de quantidade e ids que tem no arquivo.
-Todo o processo de CRUD é feito manipulando esse arquivo, então tome cuidado como irá mexer nele (já que não precisa msm ;)).
+Todo o processo de CRUD é feito manipulando esse arquivo, então tome cuidado como irá mexer nele (já que não precisa mesmo ;)).
 
 Decidi usar o flask pela sua potencialidade, simplicidade, e porque tem python! Convenhamos, melhor linguagem atualmente 😎 kkk &nbsp;
-Além disso, já é algo que tenha familiaridade e convivência.
+Além disso, já é algo que tenho familiaridade e convivência.
 
 E essa api é para cadastro de livros, simulando uma biblioteca (ou então qualquer coisa que tenha cadastro de livros hahaha).
 
