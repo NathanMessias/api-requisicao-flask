@@ -28,7 +28,7 @@ Aconselho a usar uma máquina virtual também, porque as instalações ficarão 
 
 Depois disso, vá para o diretório do projeto dentro do interpretador python e execute o seguinte comando:
 
->pip install -r requirements.txt
+>pip3 install -r requirements.txt
 
 Isso fará com que ele instale o Flask e as dependências dele. É pouca coisa, mas necessário
 
