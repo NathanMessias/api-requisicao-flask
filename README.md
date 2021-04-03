@@ -90,7 +90,7 @@ A consulta está sendo feita com base no nome do livro. Para utilizar, bastante 
 
 >/consultar/**_nome_**
 
-Caso haja o registro com o nome indicado, será retornado um todos os dados sobre ele, do contrário, será retornado um vetor em branco.
+Caso haja o registro com o nome indicado, será retornado um vetor com todos os dados sobre ele, do contrário, será retornado um vetor em branco.
 
 ### Alterar
 A alteração pode ser feita apenas em um único campo, dois campos ou até mesmo em todos existentes. Para alteração, envie um formulário de dados com os campos preenchidos que se deseja alterar, com o método PUT para o seguinte endpoint com o **id** do registro que se quer alterar:
