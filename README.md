@@ -43,7 +43,7 @@ Assim que executar, você ja pode ir para o navegador e digitar:
 > localhost:5000
 
 E nisso já verás um 'Hello World' indicando que o projeto ta on. Para utilizar os endpoints apresentados mais em baixo, basta colocar o exemplo de cada endpoint
-na frente dessa url do navagador que será sucesso!
+na frente dessa url do navegador que será sucesso!
 
 Bons Estudos! 😉
 
