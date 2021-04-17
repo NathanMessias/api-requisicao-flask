@@ -26,24 +26,32 @@ PIP instalado (Digita pip dentro do interpretador e executa, se não der erro de
 
 Aconselho a usar uma máquina virtual também, porque as instalações ficarão apenas nesse projeto (isso ai tu vê um tutorial na internet).
 
-Depois disso, vá para o diretório do projeto dentro do interpretador python e execute o seguinte comando:
+Para o Windows, recomendo usar o PowerShell para navegar: seus comandos principais de navegação são muito semelhantes ao do Linux. Vá para dentro do diretório do projeto clonado utilizando terminal (Linux) ou powershell (Windows) e execute o seguinte comando:
 
+Linux:
 >pip3 install -r requirements.txt
 
-Isso fará com que ele instale o Flask e as dependências dele. É pouca coisa, mas necessário
+Windows:
+>py -m pip install -r requirements.txt
+
+Isso fará com que ele instale o Flask e as dependências dele. É pouca coisa, mas necessário.
 
 Depois que tiver terminado de instalar, e hora de rodar o projeto. Execute o seguinte comando no mesmo lugar:
 
+Linux:
 >python3 app.py
 
-Tem que ser python3 mesmo, porque se não vai da erro logo no início!
+Windows:
+>py app.py
+
+Caso no seu sistema tenha as duas versões do python (2.x e 3.x) terá que ser python3 mesmo, porque se não vai da erro logo no início!
 
 Assim que executar, você ja pode ir para o navegador e digitar:
 
 > localhost:5000
 
 E nisso já verás um 'Hello World' indicando que o projeto ta on. Para utilizar os endpoints apresentados mais em baixo, basta colocar o exemplo de cada endpoint
-na frente dessa url do navegador que será sucesso!
+na frente dessa url do navegador que será sucesso! Ex: localhost:5000/cadastro
 
 Bons Estudos! 😉
 
